@@ -1,0 +1,27 @@
+{
+  "name": "PoyntPringer",
+  "version": "0.0.1",
+  "description": "Plugin do cordova para impressão na impressora do Poynt Smart Terminal",
+  "cordova": {
+    "id": "cordova-plugin-poyntprinter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grandssistemas/ConectaRedeCard.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "poynt",
+    "printer"
+  ],
+  "author": "Grands Sistemas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grandssistemas/ConectaRedeCard/issues"
+  },
+  "homepage": "https://github.com/grandssistemas/ConectaRedeCard#readme"
+}

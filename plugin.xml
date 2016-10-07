@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-poyntprinter" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>PoyntPrinter</name>
+    <js-module name="PoyntPrinter" src="www/PoyntPrinter.js">
+        <clobbers target="window.PoyntPrinter" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PoyntPrinter">
+                <param name="android-package" value="br.com.grands.cordova.plugin.PoyntPrinter" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="poynt.permission.BUSINESS_SERVICE" />
+            <uses-permission android:name="poynt.permission.RECEIPT_PRINTING_SERVICE" />
+        </config-file>
+        <source-file src="src/android/PoyntPrinter.java" target-dir="src/br/com/grands/cordova/plugin" />
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>
